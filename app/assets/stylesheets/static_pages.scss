@@ -1,0 +1,63 @@
+/*
+
+font-family: 'Black Ops One', cursive;
+
+font-family: 'Cinzel Decorative', cursive;
+
+font-family: 'DotGothic16', sans-serif;
+
+font-family: 'Oswald', sans-serif;
+
+font-family: 'Roboto Mono', monospace;
+
+font-family: 'Stardos Stencil', cursive;
+
+font-family: 'Syncopate', sans-serif;
+
+font-family: 'VT323', monospace;
+
+*/
+
+/* Start Navigation Link Styling */
+.nav_lnk
+{
+  font-family: 'Stardos Stencil', cursive;
+  color: #000;
+}
+.nav_lnk:hover
+{
+  color: #0F0;
+  background-color: #000;
+  border-radius: 25%;
+  cursor: crosshair;
+}
+/* End Navigation Link Styling */
+
+/* Start Home Page Offer Styling */
+.offer_text
+{
+  font-family: 'Stardos Stencil', cursive;
+  color: #FFF;
+  font-size: 30px;
+}
+/* End Home Page Offer Styling */
+
+/* Start Home Page Why Styling */
+.why_text
+{
+  font-family: 'Syncopate', sans-serif;
+  color: #FFF;
+  margin-top: 45%;
+  margin-left: 15px;
+  font-size: 25px;
+}
+/* End Home Page Why Styling */
+
+/* Start Home Page Mission Styling */
+.mission_text
+{
+  font-family: 'Black Ops One', cursive;
+  font-size: 35px;
+  color: #FFF;
+}
+/* End Home Page Mission Styling */

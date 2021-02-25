@@ -1,0 +1,149 @@
+<header>
+    <div class="w-full bg-cover bg-center" style="height:32rem; background-image: url(https://ak.picdn.net/shutterstock/videos/31799890/thumb/11.jpg);">
+        <div class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-50">
+            <div class="text-center">
+                <h1 class="text-white text-2xl font-semibold uppercase md:text-3xl">Your Ultimate <span class="underline text-blue-400">Web Firm</span></h1><br/>
+                <br/>
+                <%= link_to "Start Your Project", contact_path, class: 'mt-4 px-4 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500' %>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- This is an example component -->
+<div>
+  <div class="relative items-center justify-center">
+    <!-- Header Text-->
+    <h1 class="text-center text-2xl font-bold p-4 bg-gray-800 offer_text">What We Offer</h1>
+    <!-- All Cards Container -->
+    <div class="lg:flex items-center container mx-auto my-auto">
+
+      <!-- Card 1 -->
+      <div class="lg:m-4 shadow-md hover:shadow-lg hover:bg-gray-100 rounded-lg bg-white my-12 mx-8">
+        <!-- Card Image -->
+        <img src="https://cutewallpaper.org/21/background-gif-html/Editor-support-for-WebComponents-A-Issue-776-A-w3c-.gif" style="width: 550px; height: 350px;" alt=""class="overflow-hidden">
+        <!-- Card Content -->
+        <div class="p-4">
+          <h3 class="font-medium text-gray-600 text-lg my-2 uppercase">We Code It!</h3>
+          <p class="text-justify">We write code for virtually everything! From websites &amp; web-based applications, to mobile applications for Android &amp; iOS Devices! You need it programmed, we are here!</p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="lg:m-4 shadow-md hover:shadow-lg hover:bg-gray-100 rounded-lg bg-white my-12 mx-8">
+        <!-- Card Image -->
+        <img src="https://i2.wp.com/jonathansblog.co.uk/wp-content/uploads/2019/04/skipfish.gif?resize=750%2C585&ssl=1" style="width: 550px; height: 350px;" alt=""class="overflow-hidden">
+        <!-- Card Content -->
+        <div class="p-4">
+          <h3 class="font-medium text-gray-600 text-lg my-2 uppercase">Server Hosting &amp; Security!</h3>
+          <p class="text-justify">Hosting your website is one thing. But having professional people to host, monitor, &amp; protect your website &amp; server is another! ChaosWeb Specializes in hosting &amp; Cyber Security!</p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="lg:m-4 shadow-md hover:shadow-lg hover:bg-gray-100 rounded-lg bg-white my-12 mx-8">
+        <!-- Card Image -->
+        <img src="https://blog.contentools.com/wp-content/uploads/2017/07/SEO-gif.gif" style="width: 550px; height: 350px;" alt=""class="overflow-hidden">
+        <!-- Card Content -->
+        <div class="p-4">
+          <h3 class="font-medium text-gray-600 text-lg my-2 uppercase">SEO &amp; Marketing</h3>
+          <p class="text-justify">We do not only offer Programming &amp; Hosting. We also practice SEO &amp; Marketing Techniques in order to ensure you are indeed getting the most out of your website services!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="relative items-center justify-center">
+  <!-- Header Text-->
+  <h1 class="text-center text-2xl font-bold p-4 bg-gray-800 offer_text">Why Choose ChaosWeb?</h1>
+</div>
+<div class="w-full bg-cover bg-center" style="height:32rem; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ2KK-VZ33YOYhFGmx-WcX8bcIlkZbNu_U0Q&usqp=CAU); background-size: cover; background-repeat: no-repeat;">
+    <div class="flex h-full w-full bg-gray-900 bg-opacity-50">
+        <div>
+            <p class="text-left why_text">
+              * 15+ Years Of Experience!<br/>
+              * Trustworthy &amp; Dependable!<br/>
+              * 99.99% Uptime!<br/>
+              * Server &amp; Code Security!<br/>
+              * On-Time Delivery!<br/>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="relative items-center justify-center">
+  <!-- Header Text-->
+  <h1 class="text-center text-2xl font-bold p-4 bg-gray-800 mission_text">ChaosWeb Mission Statement</h1>
+</div><br/>
+<br/>
+<div class="w-3/4 mx-auto">
+  <div class="w-full shadow-2xl subpixel-antialiased rounded h-64 bg-black border-green mx-auto">
+    <div class="flex items-center h-6 rounded-t bg-gray-100 border-b border-gray-500 text-center text-black" id="headerTerminal">
+      <div class="flex ml-2 items-center text-center border-red-900 bg-red-500 shadow-inner rounded-full w-3 h-3" id="closebtn">
+      </div>
+      <div class="ml-2 border-yellow-900 bg-yellow-500 shadow-inner rounded-full w-3 h-3" id="minbtn">
+      </div>
+      <div class="ml-2 border-green-900 bg-green-500 shadow-inner rounded-full w-3 h-3" id="maxbtn">
+      </div>
+      <div class="mx-auto pr-16" id="terminaltitle">
+        <p class="text-center text-sm">Ubuntu Terminal</p>
+      </div>
+
+    </div>
+    <div class="pl-1 pt-1 h-auto  text-green-200 font-mono text-xs bg-black" id="console" style="margin-bottom: 20px;">
+      <p class="pb-1">Last login: <%= Time.now.strftime("%d/%m/%Y %H:%M") %></p>
+      <p class="pb-1">
+        ChaosWeb:Devprojects Cryp70$ cat ~/etc/mission_statement.txt <br/>
+        <br/>
+        ChaosWeb statement insists that each client will be held with upmost respect
+        and honor. We treat each project very personally and with delicate attention
+        to detail. While we offer a few selections of services, the ranges go far and
+        wide. <br/>
+        <br/>
+        <strong>Programming:</strong><br/>
+        <i>
+          Our highly trained, and well educated, programming staff can indeed
+          ensure that all types of projects are completed to satisifactory needs.
+          Our Programming Division is more than capable of handling the following;<br/>
+          * Website Development<br/>
+          * Web-Based Application Development<br/>
+          * E-Commerce Development<br/>
+          * Android &amp; iOS Application Development<br/>
+          * C++ Applications<br/>
+          * Video Game Development<br/>
+        </i><br/>
+        <br/>
+        <strong>Server Hosting &amp; Security:</strong><br/>
+        <i>
+          With the increasing demand of consistant up time, combined with
+          the amount of Cyber Threats, our trained Ethical Hackers ensure
+          your website will properly maintained with the following;<br/>
+          * Basic Hosting Packages ~ Simple Websites<br/>
+          * Advanced Hosting Packages ~ E-Commerce Websites<br/>
+          * Business Hosting Packages ~ Web-Based Applications<br/>
+          * Basic Security ~ SSL Certifications<br/>
+          * Advanced Security ~ Active Firewall<br/>
+          * Business Security ~ 24/7 Monitoring<br/>
+        </i><br/>
+        <br/>
+        <strong>SEO &amp; Marketing:</strong><br/>
+        <i>
+          In order to ensure that every client reaches their full potential, we also
+          provide a unique range of SEO &amp; Marketing solutions in order to ensure
+          that you do not only have a strong and secured website, but also to get customers!<br/>
+          * SEO Friendly Websites<br/>
+          * Social Media Campaign Ads<br/>
+          * Sitemap Indexing<br/>
+          * Search Engine Ads<br/>
+          * Brochures, Cards, Flyers<br/>
+        </i><br/>
+        <br/>
+        When you are considering getting a new website, hosting solution, security assurance, or
+        just want to utilize SEO &amp; marketing solutions, we can cater special packages that
+        fit any corporation and any budget!<br/>
+        <br/>
+        <strong>One Size Does NOT Fit All</strong><br/>
+        When it comes to your company, you are completely different than your competitors.
+        And it is time that a web firm treats you just as unique and respectful as you are!
+        We can cater a variety of packages in order to ensure that your company is online,
+        fully optimized, SEO &amp; Marketing Ready, as well as secured &amp; protected!
+      </p>
+    </div>
+  </div>
+</div>
