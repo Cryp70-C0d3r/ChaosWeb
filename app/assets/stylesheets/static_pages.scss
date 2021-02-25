@@ -18,6 +18,74 @@ font-family: 'VT323', monospace;
 
 */
 
+/* Start About Page Styling */
+.angel_div
+{
+  border: 3px solid #00F;
+  padding: 15px;
+  box-shadow: 10px 10px 13px #000;
+}
+.angel_hdr
+{
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  color: #00F;
+  text-shadow: 8px 8px 10px #000;
+  text-align: center;
+}
+.angel_txt
+{
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 20px;
+  color: #000;
+  text-align: left;
+}
+
+.ghost_div
+{
+  border: 3px solid #F00;
+  padding: 15px;
+  box-shadow: 10px 10px 13px #000;
+}
+.ghost_hdr
+{
+  font-family: 'Stardos Stencil', cursive;
+  font-size: 30px;
+  color: #000;
+  text-shadow: 8px 8px 10px #000;
+  text-align: center;
+}
+.ghost_txt
+{
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 20px;
+  color: #000;
+  text-align: left;
+}
+
+.crypto_div
+{
+  border: 3px solid #0F0;
+  padding: 15px;
+  box-shadow: 10px 10px 13px #000;
+}
+.crypto_hdr
+{
+  font-family: 'Black Ops One', cursive;
+  font-size: 30px;
+  color: #000;
+  text-shadow: 8px 8px 10px #000;
+  text-align: center;
+}
+.crypto_txt
+{
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  color: #000;
+  text-align: left;
+}
+/* End About Page Styling */
+
 /* Start Navigation Link Styling */
 .nav_lnk
 {

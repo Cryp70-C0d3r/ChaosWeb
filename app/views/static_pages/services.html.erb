@@ -1,3 +1,403 @@
 <% provide(:title, 'Services') %>
-<h1>StaticPages#services</h1>
-<p>Find me in app/views/static_pages/services.html.erb</p>
+<div class="relative items-center justify-center">
+  <!-- Header Text-->
+  <h1 class="text-center text-2xl font-bold p-4 bg-gray-800 offer_text">Our Potential</h1>
+</div>
+<div class="w-full bg-cover bg-center" style="height:32rem; background-image: url(https://thumbs.gfycat.com/BewitchedAntiqueAllensbigearedbat-size_restricted.gif);">
+    <div class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-50">
+        <div class="text-center">
+            <h1 class="text-white text-2xl font-semibold uppercase md:text-3xl">Programming | Server Admin | Ethical Hacking | Marketing</h1><br/>
+        </div>
+    </div>
+</div>
+
+<div class="relative items-center justify-center">
+  <!-- Header Text-->
+  <h1 class="text-center text-2xl font-bold p-4 bg-gray-800 offer_text">Valuable Services</h1>
+</div>
+<div class="container mx-auto mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+      <div>
+        <div class="rounded-lg overflow-hidden">
+          <div class="relative overflow-hidden pb-60">
+            <img class="absolute h-full w-full object-cover object-center" src="https://images.unsplash.com/photo-1537884944318-390069bb8665?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt=""/>
+          </div>
+          <div class="relative bg-blue-200">
+            <div class="py-10 px-8">
+              <h3 class="text-2xl font-bold">Programming</h3>
+              <div class="text-gray-600 text-sm font-medium flex mb-4 mt-2">
+                <p>Web | Mobile | Games</p>
+              </div>
+              <p class="leading-7">
+                We have catered our programming services to range from basic websites,
+                to Web-Based applications. We have also extended our services for mobile
+                apps
+              </p>
+              <div class="mt-10 flex justify-between items-center">
+                <div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="rounded-lg overflow-hidden">
+          <div class="relative overflow-hidden pb-60">
+            <img class="absolute h-full w-full object-cover object-center" src="https://d3b8hk1o42ev08.cloudfront.net/wp-content/uploads/2019/05/cybersecurity-post-1600x900.jpg-900x506x2-752x440.jpg" alt=""/>
+          </div>
+          <div class="relative bg-blue-200">
+            <div class="py-10 px-8">
+              <h3 class="text-2xl font-bold">Server Administration</h3>
+              <div class="text-gray-600 text-sm font-medium flex mb-4 mt-2">
+                <p>Server Hosting &amp; Ethical Hacking</p>
+              </div>
+              <p class="leading-7">
+                With extensive knowledge on Linux-Based Server hosting, networking,
+                and Ethical Hacking experiences, we can not only setup your server,
+                but protect it as well!
+              </p>
+              <div class="mt-10 flex justify-between items-center">
+                <div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="rounded-lg overflow-hidden">
+          <div class="relative overflow-hidden pb-60">
+            <img class="absolute h-full w-full object-cover object-center" src="https://london.ac.uk/sites/default/files/styles/max_1300x1300/public/2018-03/data-science.jpg?itok=bTPDs5nf" alt=""/>
+          </div>
+          <div class="relative bg-blue-200">
+            <div class="py-10 px-8">
+              <h3 class="text-2xl font-bold">Marketing &amp; SEO</h3>
+              <div class="text-gray-600 text-sm font-medium flex mb-4 mt-2">
+                <p>Connecting Your Website To Your Customers</p>
+              </div>
+              <p class="leading-7">
+                Our valuable and extensive Marketing &amp; SEO friendly websites
+                ensures that you not only have a reputable website, but it is in
+                front of your clients!
+              </p>
+              <div class="mt-10 flex justify-between items-center">
+                <div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative items-center justify-center">
+      <!-- Header Text-->
+      <h1 class="text-center text-2xl font-bold p-4 bg-gray-800 offer_text">Financial Aspect</h1>
+    </div>
+
+
+    <!-- Start Website Pricing -->
+    <h1 class="text-center font-bold text-5xl mt-8 tracking-wide relative">Website Pricing</h1>
+
+      <div class="flex flex-row justify-center my-4 text-sm tracking-tight font-medium text-gray-700">
+        <p class="mx-3">Full Price</p>
+
+        <!-- Toggle Button -->
+        <label for="toggle" class="flex items-center cursor-pointer">
+          <!-- toggle -->
+          <div class="relative">
+            <!-- hidden input -->
+            <input id="toggle" type="checkbox" class="hidden" onclick="myFunction()" />
+            <!-- line -->
+            <div class="w-10 h-3 bg-gray-400 rounded-full shadow-inner"></div>
+            <!-- dot -->
+            <div class="toggle_dot absolute w-5 h-5 bg-white rounded-full shadow inset-y-0 left-0"></div>
+          </div>
+        </label>
+
+        <p class="mx-3">Payments</p>
+      </div>
+
+      <div class="flex flex-col md:flex-row md:transform md:scale-75 lg:scale-100 justify-center">
+        <div class="border rounded-lg md:rounded-r-none text-center p-5 mx-auto md:mx-0 my-2 md:my-6 bg-gray-100 font-medium z-10 shadow-lg">
+          <div class="">Basic Website <br/><i><u style="font-size: 10px;">Starting At:</u></i></div>
+          <div id="month" class="font-bold text-6xl month hidden">&dollar;275.00</div>
+          <div id="annual" class="font-bold text-6xl annual">&dollar;550.00</div>
+          <hr>
+          <div class="text-sm my-3">3 Page Website</div>
+          <hr>
+          <div class="text-sm my-3">1 Domain Name</div>
+          <hr>
+          <div class="text-sm my-3">1 Month Free Hosting</div>
+          <hr>
+          <div class="bg-gradient-base border border-blue-600 hover:bg-white text-white hover:text-blue-600 font-bold uppercase text-xs mt-5 py-2 px-4 rounded cursor-pointer">
+            <%= link_to 'Learn More', contact_path %>
+          </div>
+        </div>
+
+        <div class="border-transparent rounded-lg text-center p-5 mx-auto md:mx-0 my-2 bg-gradient text-white font-medium z-10 shadow-lg">
+          <div class="py-4">E-Commerce <br/><i><u style="font-size: 10px;">Starting At:</u></i>
+            <div id="month" class="font-bold text-6xl month hidden">&dollar;625.00</div>
+            <div id="annual" class="font-bold text-6xl annual">&dollar;1,250.00</div>
+            <hr>
+            <div class="text-sm my-3">Basic Services</div>
+            <hr>
+            <div class="text-sm my-3">Customized E-Commerce Setup</div>
+            <hr>
+            <div class="text-sm my-3">PayPal or Stripe Payment Integration</div>
+            <hr>
+            <div class="bg-white border border-white hover:bg-transparent text-blue-600 hover:text-white font-bold uppercase text-xs mt-5 py-2 mpx-4 rounded cursor-pointer">
+              <%= link_to 'Learn More', contact_path %>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="border rounded-lg  md:rounded-l-none text-center p-5 mx-auto md:mx-0 my-2 md:my-6 bg-gray-100 font-medium z-10 shadow-lg">
+          <div class="">Web-Based Application <br/><i><u style="font-size: 10px;">Starting At:</u></i></div>
+          <div id="month" class="font-bold text-6xl month hidden">&dollar;12,500.00</div>
+          <div id="annual" class="font-bold text-6xl annual">&dollar;25,000.00</div>
+          <hr>
+          <div class="text-sm my-3">Customized Web App</div>
+          <hr>
+          <div class="text-sm my-3">User Portal &amp; Admin Portal</div>
+          <hr>
+          <div class="text-sm my-3">In-House Hosting or We Can Host</div>
+          <hr>
+          <div class="bg-gradient-base border border-blue-600 hover:bg-transparent text-white hover:text-blue-600 font-bold uppercase text-xs mt-5 py-2 px-4 rounded cursor-pointer">
+            <%= link_to 'Learn More', contact_path %>
+          </div>
+        </div>
+      </div>
+      <!-- End Website Pricing -->
+
+
+      <!-- Start Hosting Pricing -->
+      <h1 class="text-center font-bold text-5xl mt-8 tracking-wide relative">Hosting Pricing</h1>
+
+        <div class="flex flex-col md:flex-row md:transform md:scale-75 lg:scale-100 justify-center">
+          <div class="border rounded-lg md:rounded-r-none text-center p-5 mx-auto md:mx-0 my-2 md:my-6 bg-gray-100 font-medium z-10 shadow-lg">
+            <div class="">Basic Hosting <br/><i><u style="font-size: 10px;">Starting At:</u></i></div>
+            <div id="month" class="font-bold text-6xl month hidden">&dollar;7.00</div>
+            <div id="annual" class="font-bold text-6xl annual">&dollar;70.00</div>
+            <hr>
+            <div class="text-sm my-3">1GB RAM / 1 CPU</div>
+            <hr>
+            <div class="text-sm my-3">25GB SSD</div>
+            <hr>
+            <div class="text-sm my-3">1K GB Transfer Rate</div>
+            <hr>
+            <div class="bg-gradient-base border border-blue-600 hover:bg-white text-white hover:text-blue-600 font-bold uppercase text-xs mt-5 py-2 px-4 rounded cursor-pointer">
+              <%= link_to 'Learn More', contact_path %>
+            </div>
+          </div>
+
+          <div class="border-transparent rounded-lg text-center p-5 mx-auto md:mx-0 my-2 bg-gradient text-white font-medium z-10 shadow-lg">
+            <div class="py-4">Advanced Hosting <br/><i><u style="font-size: 10px;">Starting At:</u></i>
+              <div id="month" class="font-bold text-6xl month hidden">&dollar;10.00</div>
+              <div id="annual" class="font-bold text-6xl annual">&dollar;100.00</div>
+              <hr>
+              <div class="text-sm my-3">Premium 1 Intel CPU</div>
+              <hr>
+              <div class="text-sm my-3">25GB NVMe SSD</div>
+              <hr>
+              <div class="text-sm my-3">1K GB Transfer Rate</div>
+              <hr>
+              <div class="bg-white border border-white hover:bg-transparent text-blue-600 hover:text-white font-bold uppercase text-xs mt-5 py-2 mpx-4 rounded cursor-pointer">
+                <%= link_to 'Learn More', contact_path %>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="border rounded-lg  md:rounded-l-none text-center p-5 mx-auto md:mx-0 my-2 md:my-6 bg-gray-100 font-medium z-10 shadow-lg">
+            <div class="">Advanced Hosting <br/><i><u style="font-size: 10px;">Starting At:</u></i></div>
+            <div id="month" class="font-bold text-6xl month hidden">&dollar;25.00</div>
+            <div id="annual" class="font-bold text-6xl annual">&dollar;275.00</div>
+            <hr>
+            <div class="text-sm my-3">Premium 2 CPUS's</div>
+            <hr>
+            <div class="text-sm my-3">60GB NVMe SSD</div>
+            <hr>
+            <div class="text-sm my-3">3TB Transfer Rate</div>
+            <hr>
+            <div class="bg-gradient-base border border-blue-600 hover:bg-transparent text-white hover:text-blue-600 font-bold uppercase text-xs mt-5 py-2 px-4 rounded cursor-pointer">
+              <%= link_to 'Learn More', contact_path %>
+            </div>
+          </div>
+        </div>
+        <!-- End Hosting Pricing -->
+
+
+        <!-- Start Marketing Pricing -->
+        <h1 class="text-center font-bold text-5xl mt-8 tracking-wide relative">SEO &amp; Marketing Pricing</h1>
+
+          <div class="flex flex-col md:flex-row md:transform md:scale-75 lg:scale-100 justify-center">
+            <div class="border rounded-lg md:rounded-r-none text-center p-5 mx-auto md:mx-0 my-2 md:my-6 bg-gray-100 font-medium z-10 shadow-lg">
+              <div class="">Basic Marketing <br/><i><u style="font-size: 10px;">Starting At:</u></i></div>
+              <div id="month" class="font-bold text-6xl month hidden">&dollar;299.99</div>
+              <div id="annual" class="font-bold text-6xl annual">&dollar;3,299.89</div>
+              <hr>
+              <div class="text-sm my-3">SEO Friendly Website</div>
+              <hr>
+              <div class="text-sm my-3">10-Hours Social Media Management</div>
+              <hr>
+              <div class="text-sm my-3">Backlinking &amp; Keyword Indexing</div>
+              <hr>
+              <div class="bg-gradient-base border border-blue-600 hover:bg-white text-white hover:text-blue-600 font-bold uppercase text-xs mt-5 py-2 px-4 rounded cursor-pointer">
+                <%= link_to 'Learn More', contact_path %>
+              </div>
+            </div>
+
+            <div class="border-transparent rounded-lg text-center p-5 mx-auto md:mx-0 my-2 bg-gradient text-white font-medium z-10 shadow-lg">
+              <div class="py-4">Advanced Marketing <br/><i><u style="font-size: 10px;">Starting At:</u></i>
+                <div id="month" class="font-bold text-6xl month hidden">&dollar;699.99</div>
+                <div id="annual" class="font-bold text-6xl annual">&dollar;7,699.89</div>
+                <hr>
+                <div class="text-sm my-3">Basic Marketing</div>
+                <hr>
+                <div class="text-sm my-3">Cards & Flyers</div>
+                <hr>
+                <div class="text-sm my-3">Email Blast Campaigns</div>
+                <hr>
+                <div class="text-sm my-3">20-Hours Social Media Management</div>
+                <hr>
+                <div class="bg-white border border-white hover:bg-transparent text-blue-600 hover:text-white font-bold uppercase text-xs mt-5 py-2 mpx-4 rounded cursor-pointer">
+                  <%= link_to 'Learn More', contact_path %>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="border rounded-lg  md:rounded-l-none text-center p-5 mx-auto md:mx-0 my-2 md:my-6 bg-gray-100 font-medium z-10 shadow-lg">
+              <div class="">Advanced Marketing <br/><i><u style="font-size: 10px;">Starting At:</u></i></div>
+              <div id="month" class="font-bold text-6xl month hidden">&dollar;999.99</div>
+              <div id="annual" class="font-bold text-6xl annual">&dollar;10,999.89</div>
+              <hr>
+              <div class="text-sm my-3">Advanced Marketing</div>
+              <hr>
+              <div class="text-sm my-3">40-Hours Social Media Management</div>
+              <hr>
+              <div class="text-sm my-3">Customized Blog Setup</div>
+              <hr>
+              <div class="text-sm my-3">Advanced Keyword Indexing</div>
+              <hr>
+              <div class="bg-gradient-base border border-blue-600 hover:bg-transparent text-white hover:text-blue-600 font-bold uppercase text-xs mt-5 py-2 px-4 rounded cursor-pointer">
+                <%= link_to 'Learn More', contact_path %>
+              </div>
+            </div>
+          </div>
+          <!-- End Marketing Pricing -->
+
+
+          <!-- Start Cyber Security Pricing -->
+          <h1 class="text-center font-bold text-5xl mt-8 tracking-wide relative">Cyber Security Pricing</h1>
+
+            <div class="flex flex-col md:flex-row md:transform md:scale-75 lg:scale-100 justify-center">
+              <div class="border rounded-lg md:rounded-r-none text-center p-5 mx-auto md:mx-0 my-2 md:my-6 bg-gray-100 font-medium z-10 shadow-lg">
+                <div class="">Basic Security <br/><i><u style="font-size: 10px;">Starting At:</u></i></div>
+                <div id="month" class="font-bold text-6xl month hidden">&dollar;5.00</div>
+                <div id="annual" class="font-bold text-6xl annual">&dollar;50.00</div>
+                <hr>
+                <div class="text-sm my-3">9098-Bit Encrypted SSH Keys</div>
+                <hr>
+                <div class="text-sm my-3">A-Grade SSL Certification</div>
+                <hr>
+                <div class="text-sm my-3">Domain Name Privacy</div>
+                <hr>
+                <div class="bg-gradient-base border border-blue-600 hover:bg-white text-white hover:text-blue-600 font-bold uppercase text-xs mt-5 py-2 px-4 rounded cursor-pointer">
+                  <%= link_to 'Learn More', contact_path %>
+                </div>
+              </div>
+
+              <div class="border-transparent rounded-lg text-center p-5 mx-auto md:mx-0 my-2 bg-gradient text-white font-medium z-10 shadow-lg">
+                <div class="py-4">Advanced Security <br/><i><u style="font-size: 10px;">Starting At:</u></i>
+                  <div id="month" class="font-bold text-6xl month hidden">&dollar;15.00</div>
+                  <div id="annual" class="font-bold text-6xl annual">&dollar;150.00</div>
+                  <hr>
+                  <div class="text-sm my-3">Basic Security</div>
+                  <hr>
+                  <div class="text-sm my-3">A+ Grade SSL Certification</div>
+                  <hr>
+                  <div class="text-sm my-3">Stage-1 Firewall</div>
+                  <hr>
+                  <div class="bg-white border border-white hover:bg-transparent text-blue-600 hover:text-white font-bold uppercase text-xs mt-5 py-2 mpx-4 rounded cursor-pointer">
+                    <%= link_to 'Learn More', contact_path %>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="border rounded-lg  md:rounded-l-none text-center p-5 mx-auto md:mx-0 my-2 md:my-6 bg-gray-100 font-medium z-10 shadow-lg">
+                <div class="">Corporation Security <br/><i><u style="font-size: 10px;">Starting At:</u></i></div>
+                <div id="month" class="font-bold text-6xl month hidden">&dollar;25.00</div>
+                <div id="annual" class="font-bold text-6xl annual">&dollar;250.00</div>
+                <hr>
+                <div class="text-sm my-3">Advanced Security</div>
+                <hr>
+                <div class="text-sm my-3">Stage-2 Firewall</div>
+                <hr>
+                <div class="text-sm my-3">Active Monitoring</div>
+                <hr>
+                <div class="bg-gradient-base border border-blue-600 hover:bg-transparent text-white hover:text-blue-600 font-bold uppercase text-xs mt-5 py-2 px-4 rounded cursor-pointer">
+                  <%= link_to 'Learn More', contact_path %>
+                </div>
+              </div>
+            </div>
+            <!-- End Cyber Security Pricing -->
+
+
+
+      <!--JS for toggle-->
+      <script>
+        function myFunction() {
+          var x = document.querySelectorAll('.annual');
+          var y = document.querySelectorAll('.month');
+          for (var i = 0; i < x.length; i++) {
+            if (document.getElementById("toggle").checked == true) {
+              x[i].classList.add('hidden');
+              y[i].classList.remove('hidden');
+            } else {
+              x[i].classList.remove('hidden');
+              y[i].classList.add('hidden');
+            }
+          }
+        }
+      </script>
+
+
+
+
+    <style>
+        @media (min-width: 640px) {
+          .sm\:bg-svg-bottom {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='353' height='304'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23D0D5F6' stroke-width='2'%3E%3Cpath d='M180.29 759c102.087-21.62 155.232-61.312 159.437-119.074 6.307-86.643-231.598-17.186-136.358-198 95.241-180.813 181.318-185.29 136.358-298C294.767 31.216 174.04-27.954 33.79 16.8c-93.501 29.836-144.652 140.545-153.453 332.126'/%3E%3Cpath d='M138.3 759c80.083-18.988 121.774-53.846 125.072-104.575 4.948-76.093-181.679-15.094-106.966-173.89C231.118 321.738 298.64 317.808 263.372 218.82c-35.269-98.986-129.974-150.95-239.995-111.646C-49.97 133.378-90.096 230.605-97 398.859'/%3E%3Cpath d='M102.065 761c60.604-16.56 92.153-46.963 94.65-91.208 3.743-66.367-137.488-13.165-80.949-151.664 56.54-138.5 107.638-141.927 80.948-228.261-26.69-86.335-98.359-131.656-181.618-97.376C-40.41 215.345-70.775 300.145-76 446.892'/%3E%3C/g%3E%3C/svg%3E");
+          }
+        }
+
+        .toggle_dot {
+          top: -.25rem;
+          transition: all 0.3s ease-in-out;
+        }
+
+        input:checked~.toggle_dot {
+          transform: translateX(100%);
+          background-color: #0082c8;
+        }
+
+        .bg-gradient {
+          background: #667db6;
+          /* fallback for old browsers */
+          background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+          /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+          /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        .bg-gradient-base {
+          background-color: #0082c8;
+        }
+
+        .font-work-sans {
+          font-family: 'Work Sans', sans-serif;
+        }
+      </style>
