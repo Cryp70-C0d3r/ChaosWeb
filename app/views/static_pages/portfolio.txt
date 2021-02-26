@@ -12,6 +12,7 @@
     <div class="md:w-1/2 w-5/6">
       <%= image_tag('gamrealty', class: 'object-cover object-center', alt: 'Gambia Realty Web-Based Application') %>
     </div>
+
 </section>
 
 <section class="text-gray-700 body-font flex md:flex-row flex-col items-center bg-white">
