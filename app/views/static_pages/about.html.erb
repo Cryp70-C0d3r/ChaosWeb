@@ -61,3 +61,52 @@
   <!-- card end -->
 
 </div>
+
+
+<script>
+  function AngelClick()
+  {
+    var a = document.getElementById("AngelDIV");
+    if (a.style.display === "none")
+    {
+      a.style.display = "block";
+      document.getElementById("GhostDIV").style.display = "none";
+      document.getElementById("Cryp70DIV").style.display = "none";
+    }
+    else
+    {
+      a.style.display = "none";
+    }
+  }
+
+  function GhostClick()
+  {
+    var g = document.getElementById("GhostDIV");
+    if (g.style.display === "none")
+    {
+      g.style.display = "block";
+      document.getElementById("AngelDIV").style.display = "none";
+      document.getElementById("Cryp70DIV").style.display = "none";
+    }
+    else
+    {
+      g.style.display = "none";
+    }
+  }
+
+  function CryptoClick()
+  {
+    var c = document.getElementById("Cryp70DIV");
+    if (c.style.display === "none")
+    {
+      c.style.display = "block";
+      document.getElementById("AngelDIV").style.display = "none";
+      document.getElementById("GhostDIV").style.display = "none";
+    }
+    else
+    {
+      c.style.display = "none";
+    }
+  }
+
+  </script>
