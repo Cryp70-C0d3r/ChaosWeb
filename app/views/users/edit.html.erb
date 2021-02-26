@@ -1,0 +1,69 @@
+<% provide(:title, "Edit user") %>
+<h1>Update your profile</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_with(model: @user, local: true) do |f| %>
+      <%= render 'shared/error_messages' %>
+
+      <%= f.label 'Your Name:' %>
+      <%= f.text_field :name, class: 'form-control' %>
+
+      <%= f.label 'Your Email:' %>
+      <%= f.email_field :email, class: 'form-control' %>
+
+      <%= f.label 'Your Phone:' %>
+      <%= f.text_field :tel, class: 'form-control' %>
+
+      <%= f.label 'Your Business Name:' %>
+      <%= f.text_field :biz, class: 'form-control' %>
+
+      <%= f.label 'Your Address:' %>
+      <%= f.text_field :adr, class: 'form-control' %>
+
+      <%= f.label 'Your City:' %>
+      <%= f.text_field :cty, class: 'form-control' %>
+
+      <%= f.label 'Your State:' %>
+      <%= f.text_field :ste, class: 'form-control' %>
+
+      <%= f.label 'Your Zip:' %>
+      <%= f.text_field :zip, class: 'form-control' %>
+
+      <%= f.label 'Your Website Package:' %>
+      <%= f.text_field :web_type, class: 'form-control' %>
+
+      <%= f.label 'Your Hosting Package:' %>
+      <%= f.text_field :hosting_type, class: 'form-control' %>
+
+      <%= f.label 'Your Security Package:' %>
+      <%= f.text_field :security_type, class: 'form-control' %>
+
+      <%= f.label 'Your Order Total:' %>
+      <%= f.text_field :order_total, class: 'form-control' %>
+
+      <%= f.label 'Your Ongoing Charges:' %>
+      <%= f.text_field :ongoing_total, class: 'form-control' %>
+
+      <%= f.label 'Your Start Date:' %>
+      <%= f.text_field :date_started, class: 'form-control' %>
+
+      <%= f.label 'Your Completed Date:' %>
+      <%= f.text_field :date_completed, class: 'form-control' %>
+
+      <%= f.label 'Your Domain Name:' %>
+      <%= f.text_field :domain_name, class: 'form-control' %>
+
+      <%= f.label 'Your Server IP:' %>
+      <%= f.text_field :ip_adr, class: 'form-control' %>
+
+      <%= f.label 'Your Password:' %>
+      <%= f.password_field :password, class: 'form-control' %>
+
+      <%= f.label 'Confirm Your Password:' %>
+      <%= f.password_field :password_confirmation, class: 'form-control' %>
+
+      <%= f.submit "Save changes", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

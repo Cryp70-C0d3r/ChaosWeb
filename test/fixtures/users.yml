@@ -1,0 +1,44 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+hacker:
+  name: Cryp70
+  biz: ChaosW3b
+  email: cryp70@tuta.io
+  tel: 254.555.3846
+  adr: 404 Hacker BLVD
+  cty: Dallas
+  ste: Texas
+  zip: 75189
+  web_type: Web App
+  hosting_type: Corporate
+  security_type: Corporate
+  date_started: 01/01/2021
+  date_completed: 01/15/2021
+  order_total: $10,150.89
+  ongoing_total: $315/Mo | $3,419.90/Yr
+  due_date: Jan Yearly
+  domain_name: chaos-w3b.herokuapp.com
+  ip_adr: 1.1.1.1
+  password_digest: <%= User.digest('password') %>
+  admin: true
+
+coder:
+  name: Gh0s7
+  biz: ChaosW3b
+  email: ghost@kanyi.gm
+  tel: 254.555.3847
+  adr: 501 Hacker BLVD
+  cty: Dallas
+  ste: Texas
+  zip: 75189
+  web_type: Web App
+  hosting_type: Corporate
+  security_type: Corporate
+  date_started: 01/01/2021
+  date_completed: 01/15/2021
+  order_total: $10,150.89
+  ongoing_total: $315/Mo | $3,419.90/Yr
+  due_date: 1st Monthly
+  domain_name: chaos-w3b.herokuapp.com
+  ip_adr: 1.0.0.1
+  password_digest: <%= User.digest('password') %>

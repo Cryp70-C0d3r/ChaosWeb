@@ -1,2 +1,73 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<% provide(:title, 'Sign up') %>
+<h1>Sign up</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_with(model: @user, local: true) do |f| %>
+
+    <%= render 'shared/error_messages' %>
+
+      <%= f.label 'Customer Name:' %>
+      <%= f.text_field :name, class: 'form-control' %>
+
+      <%= f.label 'Customer Business Name:' %>
+      <%= f.text_field :biz, class: 'form-control' %>
+
+      <%= f.label 'Customer Email:' %>
+      <%= f.email_field :email, class: 'form-control' %>
+
+      <%= f.label 'Customer Telephone:' %>
+      <%= f.telephone_field :tel, class: 'form-control' %>
+
+      <%= f.label 'Customer Address:' %>
+      <%= f.text_field :adr, class: 'form-control' %>
+
+      <%= f.label 'Customer City:' %>
+      <%= f.text_field :cty, class: 'form-control' %>
+
+      <%= f.label 'Customer State:' %>
+      <%= f.text_field :ste, class: 'form-control' %>
+
+      <%= f.label 'Customer Zip:' %>
+      <%= f.text_field :zip, class: 'form-control' %>
+
+      <%= f.label 'Customer Web Type:' %>
+      <%= f.text_field :web_type, class: 'form-control' %>
+
+      <%= f.label 'Customer Hosting Type:' %>
+      <%= f.text_field :hosting_type, class: 'form-control' %>
+
+      <%= f.label 'Customer Security Type:' %>
+      <%= f.text_field :security_type, class: 'form-control' %>
+
+      <%= f.label 'Customer Start Date:' %>
+      <%= f.text_field :date_started, class: 'form-control' %>
+
+      <%= f.label 'Customer Date Completed:' %>
+      <%= f.text_field :date_completed, class: 'form-control' %>
+
+      <%= f.label 'Customer Order Total:' %>
+      <%= f.text_field :order_total, class: 'form-control' %>
+
+      <%= f.label 'Customer Ongoing Total:' %>
+      <%= f.text_field :ongoing_total, class: 'form-control' %>
+
+      <%= f.label 'Customer Due Date:' %>
+      <%= f.text_field :due_date, class: 'form-control' %>
+
+      <%= f.label 'Customer Domain Name:' %>
+      <%= f.text_field :domain_name, class: 'form-control' %>
+
+      <%= f.label 'Customer IP Address:' %>
+      <%= f.text_field :ip_adr, class: 'form-control' %>
+
+      <%= f.label 'Customer Password:' %>
+      <%= f.password_field :password, class: 'form-control' %>
+
+      <%= f.label 'Confirm Customer Password:' %>
+      <%= f.password_field :password_confirmation, class: 'form-control' %>
+
+      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
