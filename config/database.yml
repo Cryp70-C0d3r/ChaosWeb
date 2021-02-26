@@ -21,9 +21,6 @@ test:
   database: 'chaos-w3b'
 
 production:
-  <<: *default
-  database: 'chaos-w3b'
-production:
   adapter: postgresql
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
