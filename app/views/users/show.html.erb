@@ -65,11 +65,9 @@
             <hr>
           </div>
 
-          <div class="form-item w-full">
-            <label class="text-xl intel_hdr">Website Development Document Agreement:</label><label class="text-xl intel_txt"> <%= link_to 'My Website Agreement', '#' %></label><br/>
-            <label class="text-xl intel_hdr">Server Hosting &amp; Security Document Agreement:</label><label class="text-xl intel_txt"> <%= link_to 'My Hosting/Security Agreement', '#' %></label><br/>
-            <label class="text-xl intel_hdr">SEO &amp; Marketing Document Agreement: </label><label class="text-xl intel_txt"><%= link_to 'My SEO/Marketing Agreement', '#' %></label>
-          </div>
+          <% if @user == User.find_by_email('cryp70@tuta.io') %>
+            <%= render 'users/Chaos_W3b/chaos_w3b_docs' %>
+          <% end %>
 
           <div>
             <h3 class="text-2xl font-semibold ttle_hdr">Website Progress:</h3>
@@ -78,7 +76,7 @@
 
           <div class="form-item w-full">
             <% if @user == User.find_by_email('cryp70@tuta.io') %>
-              <%= render 'users/chaos_w3b_time_line' %>
+              <%= render 'users/Chaos_W3b/chaos_w3b_time_line' %>
             <% end %>
           </div>
 
@@ -152,35 +150,15 @@
             <hr>
           </div>
 
-
-          <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
-            <div class="form-item w-full">
-              <label class="text-xl ">Due Date:</label>
-              <label class="text-xl intel_txt"><%= @user.due_date %></label>
-            </div>
-            <div class="form-item w-full">
-              <label class="text-xl ">Pay Now:</label>
-              <% if @user == User.find_by_email('cryp70@tuta.io') %>
-                <%= render 'users/chaos_w3b_payment' %>
-              <% end %>
-              <% if @user == User.find_by_email('ghost@kanyi.gm') %>
-                <%= render 'users/ghost_payment' %>
-              <% end %>
-            </div>
-          </div>
-
-
-
-
           <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
 
             <div class="form-item w-full">
-              <label class="text-xl ">Order Total:</label>
+              <label class="text-xl intel_hdr">Order Total:</label>
               <label class="text-xl intel_txt"><%= @user.order_total %></label>
             </div>
 
             <div class="form-item w-full">
-              <label class="text-xl ">Ongoing Fees:</label>
+              <label class="text-xl intel_hdr">Ongoing Fees:</label>
               <label class="text-xl intel_txt"><%= @user.ongoing_total %></label>
             </div>
           </div>
@@ -188,14 +166,31 @@
           <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
 
             <div class="form-item w-full">
-              <label class="text-xl ">Order Date:</label>
+              <label class="text-xl intel_hdr">Order Date:</label>
               <label class="text-xl intel_txt"><%= @user.date_started %></label>
             </div>
 
             <div class="form-item w-full">
-              <label class="text-xl ">Website Completed Date:</label>
+              <label class="text-xl intel_hdr">Website Completed Date:</label>
               <label class="text-xl intel_txt"><%= @user.date_completed %></label>
             </div>
+          </div>
+
+
+          <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+              <div class="form-item w-full">
+                <label class="text-xl intel_hdr">Due Date:</label>
+                <label class="text-xl intel_txt"><%= @user.due_date %></label>
+              </div>
+              <div class="form-item w-full">
+                <label class="text-xl intel_hdr">Pay Now:</label>
+                  <% if @user == User.find_by_email('cryp70@tuta.io') %>
+                    <%= render 'users/Chaos_W3b/chaos_w3b_payment' %>
+                  <% end %>
+                  <% if @user == User.find_by_email('ghost@kanyi.gm') %>
+                    <%= render 'users/ghost_payment' %>
+                  <% end %>
+              </div>
           </div>
     </div>
 

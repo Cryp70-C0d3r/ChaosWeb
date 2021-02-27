@@ -1,35 +1,19 @@
 <% provide(:title, "Log in") %>
-<h1>Log in</h1>
-
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
-
-      <%= f.label :email %>
-      <%= f.email_field :email, class: 'form-control' %>
-
-      <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control' %>
-
-      <%= f.submit "Log in", class: "btn btn-primary" %>
-    <% end %>
-
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
-  </div>
-</div>
 <div class="leading-loose" align="center">
   <div class="max-w-xl m-4 p-10 bg-white rounded shadow-xl" align="center">
     <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
-    <p class="text-gray-800 font-medium">New Customer information</p><br/>
+    <p class="text-gray-800 font-medium">Client Portal Access:</p><br/>
     <br/>
     <div class="">
-      <%= render 'shared/error_messages' %>
-      <%= f.label 'Customer Name:', class: 'block text-sm text-gray-00 frm_hdr' %>
-      <%= f.text_field :name, class: 'w-full px-5 py-1 text-gray-700 bg-gray-200 rounded form-control frm_inp', require: true %>
+      <%= f.label 'Your Email:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.email_field :email, class: 'w-full px-5 py-1 text-gray-700 bg-gray-200 rounded frm_inp' %>
     </div>
     <div class="mt-2">
-      <%= f.label 'Customer Email:', class: 'block text-sm text-gray-00 frm_hdr' %>
-      <%= f.text_field :email, class: 'w-full px-5  py-4 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+      <%= f.label 'Your Password:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.password_field :password, class: 'w-full px-5  py-4 text-gray-700 bg-gray-200 rounded frm_inp' %>
+    </div>
+    <div class="mt-4">
+      <%= f.submit "Access My Portal", class: "px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded" %>
     </div>
     <% end %>
   </div>
