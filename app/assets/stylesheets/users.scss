@@ -1,3 +1,51 @@
-// Place all the styles related to the Users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+/*
+
+font-family: 'Black Ops One', cursive;
+
+font-family: 'Cinzel Decorative', cursive;
+
+font-family: 'DotGothic16', sans-serif;
+
+font-family: 'Oswald', sans-serif;
+
+font-family: 'Roboto Mono', monospace;
+
+font-family: 'Stardos Stencil', cursive;
+
+font-family: 'Syncopate', sans-serif;
+
+font-family: 'VT323', monospace;
+
+*/
+
+.nme_hdr
+{
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 30px;
+}
+.dte_hdr
+{
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 25px;
+}
+
+.ttle_hdr
+{
+  font-family: 'Black Ops One', cursive;
+  font-size: 35px;
+  text-decoration: overline;
+  margin-top: 25px;
+}
+
+.intel_hdr
+{
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 25px;
+  text-shadow: 5px 5px 7px #000;
+}
+
+.intel_txt
+{
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}

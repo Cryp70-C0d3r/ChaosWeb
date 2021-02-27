@@ -1,6 +1,304 @@
 <% provide(:title, @user.biz) %>
 
-<h1>
-  <%= @user.name %><br/>
-  <%= @user.biz %>
-</h1>
+<div class="w-full relative mt-4 shadow-2xl rounded my-24 overflow-hidden">
+  <div class="top h-64 w-full bg-blue-600 overflow-hidden relative" >
+    <img src="https://i.gifer.com/NvL.gif" alt="" class="bg w-full h-full object-cover object-center absolute z-0">
+    <div class="flex flex-col justify-center items-center relative h-full bg-black bg-opacity-50 text-white">
+      <img src="https://cdn.hipwallpaper.com/i/75/6/1NStk9.jpg" class="h-24 w-24 object-cover rounded-full">
+      <h1 class="text-2xl font-semibold nme_hdr"><%= @user.name %></h1>
+      <h4 class="text-sm font-semibold dte_hdr"><%= @user.date_started %></h4>
+    </div>
+  </div>
+  <div class="grid grid-cols-12 bg-white ">
+
+    <div class="col-span-12 w-full px-3 py-6 justify-center flex space-x-4 border-b border-solid md:space-x-0 md:space-y-4 md:flex-col md:col-span-2 md:justify-start ">
+
+      <a class="text-sm p-2 bg-indigo-200 text-center rounded font-semibold hover:bg-indigo-700 hover:text-gray-200" onclick="ProfileClick()">Your Information</a>
+
+      <a class="text-sm p-2 bg-indigo-200 text-center rounded font-semibold hover:bg-indigo-700 hover:text-gray-200" onclick="BusinessClick()">Business Information</a>
+
+      <a class="text-sm p-2 bg-indigo-200 text-center rounded font-semibold hover:bg-indigo-700 hover:text-gray-200" onclick="FinancialClick()">Financial Information</a>
+
+    </div>
+
+    <div class="col-span-12 md:border-solid md:border-l md:border-black md:border-opacity-25 h-full pb-12 md:col-span-10" id="ProfileDIV" style="display: block">
+      <div class="px-4 pt-4">
+
+          <div>
+            <h3 class="text-2xl font-semibold ttle_hdr">Your Information</h3>
+            <hr>
+          </div>
+
+          <div class="form-item">
+            <label class="text-xl intel_hdr">Your Name:</label>
+            <label class="text-xl intel_txt"><%= @user.name %></label>
+          </div>
+
+          <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+
+            <div class="form-item w-full">
+              <label class="text-xl intel_hdr">Address:</label>
+              <label class="text-xl intel_txt"><%= @user.adr %></label>
+            </div>
+
+            <div class="form-item w-full">
+              <label class="text-xl intel_hdr">City:</label>
+              <label class="text-xl intel_txt"><%= @user.cty %></label>
+            </div>
+          </div>
+
+          <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+
+            <div class="form-item w-full">
+              <label class="text-xl intel_hdr">State:</label>
+              <label class="text-xl intel_txt"><%= @user.ste %></label>
+            </div>
+
+            <div class="form-item w-full">
+              <label class="text-xl intel_hdr">Zip:</label>
+              <label class="text-xl intel_txt"><%= @user.zip %></label>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-semibold ttle_hdr">Documents:</h3>
+            <hr>
+          </div>
+
+          <div class="form-item w-full">
+            <label class="text-xl intel_hdr">Website Development Document Agreement:</label><label class="text-xl intel_txt"> <%= link_to 'My Website Agreement', '#' %></label><br/>
+            <label class="text-xl intel_hdr">Server Hosting &amp; Security Document Agreement:</label><label class="text-xl intel_txt"> <%= link_to 'My Hosting/Security Agreement', '#' %></label><br/>
+            <label class="text-xl intel_hdr">SEO &amp; Marketing Document Agreement: </label><label class="text-xl intel_txt"><%= link_to 'My SEO/Marketing Agreement', '#' %></label>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-semibold ttle_hdr">Website Progress:</h3>
+            <hr>
+          </div>
+
+          <div class="form-item w-full">
+            <% if @user == User.find_by_email('cryp70@tuta.io') %>
+            <div>
+                <h1 class="mb-4 text-center font-black text-gray-700">Your Progress Timeline</h1>
+                <p style="text-align: center;"><b style="color: green">Green Indicates Step is Completed!</b>  <b style="color: blue">Blue Indicates Work-In-Progress!</b>  <b style="color: gray">Gray Indicates Not Started!</b></p>
+                <div class="flex">
+                  <div class="w-1/3 text-center px-6">
+                    <div class="bg-green-300 rounded-lg flex items-center justify-center border border-gray-200">
+                      <div class="w-1/3 bg-transparent h-20 flex items-center justify-center icon-step">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <i class="fas fa-users"></i>
+                        </svg>
+                      </div>
+                      <div class="w-2/3 bg-green-200 h-24 flex flex-col items-center justify-center px-1 rounded-r-lg body-step">
+                        <h2 class="font-bold text-sm">Signed Documents</h2>
+                        <p class="text-xs text-gray-600">
+                          We had signed everything and collected a payment!<br/>
+                          Your Portal is now LIVE!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-1 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M14 2h-7.229l7.014 7h-13.785v6h13.785l-7.014 7h7.229l10-10z"/></svg>
+                  </div>
+                  <div class="w-1/3 text-center px-6">
+                    <div class="bg-blue-300 rounded-lg flex items-center justify-center border border-gray-200">
+                      <div class="w-1/3 bg-transparent h-20 flex items-center justify-center icon-step">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                          <i class="fas fa-server"></i>
+                        </svg>
+                      </div>
+                      <div class="w-2/3 bg-blue-200 h-24 flex flex-col items-center justify-center px-1 rounded-r-lg body-step">
+                        <h2 class="font-bold text-sm">Production Started!</h2>
+                        <p class="text-xs text-gray-600">
+                          We have setup your server &amp; are working on your site!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-1 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M14 2h-7.229l7.014 7h-13.785v6h13.785l-7.014 7h7.229l10-10z"/></svg>
+                  </div>
+                  <div class="w-1/3 text-center px-6">
+                    <div class="bg-gray-300 rounded-lg flex items-center justify-center border border-gray-200">
+                      <div class="w-1/3 bg-transparent h-20 flex items-center justify-center icon-step">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                          <i class="fas fa-flag-checkered"></i>
+                        </svg>
+                      </div>
+                      <div class="w-2/3 bg-gray-200 h-24 flex flex-col items-center justify-center px-1 rounded-r-lg body-step">
+                        <h2 class="font-bold text-sm">Website Live!</h2>
+                        <p class="text-xs text-gray-600">
+                          We have finished your project and your are now live!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          </div>
+
+
+      </div>
+    </div>
+
+    <div class="col-span-12 md:border-solid md:border-l md:border-black md:border-opacity-25 h-full pb-12 md:col-span-10" id="BusinessDIV" style="display: none">
+
+      <div class="px-4 pt-4">
+
+          <div>
+            <h3 class="text-2xl font-semibold">Business Information</h3>
+            <hr>
+          </div>
+
+          <div class="form-item">
+            <label class="text-xl intel_hdr">Business Name:</label>
+            <label class="text-xl intel_txt"><%= @user.biz %></label>
+          </div>
+
+          <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+
+            <div class="form-item w-full">
+              <label class="text-xl intel_hdr">Website Services:</label>
+              <label class="text-xl intel_txt"><%= @user.web_type %></label>
+            </div>
+
+            <div class="form-item w-full">
+              <label class="text-xl intel_hdr">Hosting Services:</label>
+              <label class="text-xl intel_txt"><%= @user.hosting_type %></label>
+            </div>
+          </div>
+
+          <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+
+            <div class="form-item w-full">
+              <label class="text-xl intel_hdr">Security Services:</label>
+              <label class="text-xl intel_txt"><%= @user.security_type %></label>
+            </div>
+
+            <div class="form-item w-full">
+              <label class="text-xl intel_hdr">SEO Services:</label>
+              <label class="text-xl intel_txt">Fill In</label>
+            </div>
+          </div>
+
+          <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+
+            <div class="form-item w-full">
+              <label class="text-xl intel_hdr">Domain Name:</label>
+              <label class="text-xl intel_txt"><%= @user.domain_name %></label>
+            </div>
+
+            <div class="form-item w-full">
+              <label class="text-xl intel_hdr">IP Address:</label>
+              <label class="text-xl intel_txt"><%= @user.ip_adr %></label>
+            </div>
+          </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="col-span-12 md:border-solid md:border-l md:border-black md:border-opacity-25 h-full pb-12 md:col-span-10" id="FinancialDIV" style="display: none">
+      <div class="px-4 pt-4">
+
+          <div>
+            <h3 class="text-2xl font-semibold">Financial Information</h3>
+            <hr>
+          </div>
+
+
+          <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+            <div class="form-item w-full">
+              <label class="text-xl ">Due Date:</label>
+              <label class="text-xl intel_txt"><%= @user.due_date %></label>
+            </div>
+            <div class="form-item w-full">
+              <label class="text-xl ">Pay Now:</label>
+              <label class="text-xl intel_txt"><%= image_tag('53x31-Purple Zelle badge') %></label>
+            </div>
+          </div>
+
+
+
+
+          <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+
+            <div class="form-item w-full">
+              <label class="text-xl ">Order Total:</label>
+              <label class="text-xl intel_txt"><%= @user.order_total %></label>
+            </div>
+
+            <div class="form-item w-full">
+              <label class="text-xl ">Ongoing Fees:</label>
+              <label class="text-xl intel_txt"><%= @user.ongoing_total %></label>
+            </div>
+          </div>
+
+          <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+
+            <div class="form-item w-full">
+              <label class="text-xl ">Order Date:</label>
+              <label class="text-xl intel_txt"><%= @user.date_started %></label>
+            </div>
+
+            <div class="form-item w-full">
+              <label class="text-xl ">Website Completed Date:</label>
+              <label class="text-xl intel_txt"><%= @user.date_completed %></label>
+            </div>
+          </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<script>
+  function ProfileClick()
+  {
+    var p = document.getElementById("ProfileDIV");
+    if (p.style.display === "none")
+    {
+      p.style.display = "block";
+      document.getElementById("BusinessDIV").style.display = "none";
+      document.getElementById("FinancialDIV").style.display = "none";
+    }
+    else
+    {
+      p.style.display = "none";
+    }
+  }
+
+  function BusinessClick()
+  {
+    var b = document.getElementById("BusinessDIV");
+    if (b.style.display === "none")
+    {
+      b.style.display = "block";
+      document.getElementById("ProfileDIV").style.display = "none";
+      document.getElementById("FinancialDIV").style.display = "none";
+    }
+    else
+    {
+      b.style.display = "none";
+    }
+  }
+
+  function FinancialClick()
+  {
+    var f = document.getElementById("FinancialDIV");
+    if (f.style.display === "none")
+    {
+      f.style.display = "block";
+      document.getElementById("BusinessDIV").style.display = "none";
+      document.getElementById("ProfileDIV").style.display = "none";
+    }
+    else
+    {
+      f.style.display = "none";
+    }
+  }
+</script>

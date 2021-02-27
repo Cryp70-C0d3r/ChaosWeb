@@ -30,4 +30,10 @@ class StaticPagesController < ApplicationController
 
   def portfolio
   end
+
+  def order_success
+  end
+
+  def order_cancel
+  end
 end

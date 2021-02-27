@@ -25,12 +25,12 @@
                 <li><%= link_to 'About', about_path, class: "inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk" %></li>
                 <li><%= link_to 'Services', services_path, class: "inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk" %></li>
                 <li><%= link_to 'Portfolio', portfolio_path, class: "inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk" %></li>
+                <li><%= link_to 'Success', success_path, class: "inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk" %></li>
+                <li><%= link_to 'cancel', cancel_path, class: "inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk" %></li>
                 <% if logged_in? %>
-                  <li><%= link_to 'My Account', current_user, class: 'inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk' %></li>
-                  <li><%= link_to 'Settings', edit_user_path(current_user), class: 'inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk' %></li>
+                  <li><%= link_to 'My Portal', current_user, class: 'inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk' %></li>
                 <% else %>
                   <li><%= link_to 'Log In', login_path, class: 'inline-block no_underline font-medium text-2xl px-4 lg:-ml-2 nav_lnk' %></li>
-                  <li><%= link_to "Log in", login_path, class: 'inline-block no_underline font-medium text-2xl px-4 lg:-ml-2 nav_lnk' %></li>
                 <% end %>
               </ul>
             </div>

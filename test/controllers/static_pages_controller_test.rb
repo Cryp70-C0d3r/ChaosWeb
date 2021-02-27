@@ -35,4 +35,16 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "title", "Portfolio | #{@base_title}"
   end
+
+  test "should get order success" do
+    get success_path
+    assert_response :success
+    assert_select "title", "Success Order | #{@base_title}"
+  end
+
+  test "should get order cancel" do
+    get cancel_path
+    assert_response :success
+    assert_select "title", "Cancel Order | #{@base_title}"
+  end 
 end
