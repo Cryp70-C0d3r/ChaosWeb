@@ -39,6 +39,9 @@ class User < ApplicationRecord
   # Validates User Security Type #
   validates :security_type, presence: true, length: { maximum: 12 }
 
+  # Validates User SEO Type #
+  validates :seo_type, presence: true, length: { maximum: 12 }
+
   # Validates User Date Started #
   validates :date_started, presence: true, length: { maximum: 14 }
 

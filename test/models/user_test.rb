@@ -3,7 +3,7 @@ require "test_helper"
 class UserTest < ActiveSupport::TestCase
 
   def setup
-    @user = User.new(name: "John Doe", email: "name@me.com", biz: "My Company", tel: "111-111-1111", adr: "404 Hacker BLVD", cty: "Dallas", ste: "Texas", zip: "75189", web_type: "E-Commerce", hosting_type: "Basic", security_type: "Corporate", date_started: "01/01/2021", date_completed: "01/15/2021", order_total: "$750", ongoing_total: "$312/Mo | $3,419.89/Yr", due_date: "1st of Month | Jan Yearly", domain_name: "me.com", ip_adr: "1.1.1.1", password: "abc123", password_confirmation: "abc12")
+    @user = User.new(name: "John Doe", email: "name@me.com", biz: "My Company", tel: "111-111-1111", adr: "404 Hacker BLVD", cty: "Dallas", ste: "Texas", zip: "75189", web_type: "E-Commerce", hosting_type: "Basic", security_type: "Corporate", seo_type: "Corporate", date_started: "01/01/2021", date_completed: "01/15/2021", order_total: "$750", ongoing_total: "$312/Mo | $3,419.89/Yr", due_date: "1st of Month | Jan Yearly", domain_name: "me.com", ip_adr: "1.1.1.1", password: "abc123", password_confirmation: "abc12")
   end
 
   test "should be valid" do
@@ -148,6 +148,16 @@ class UserTest < ActiveSupport::TestCase
 
   test "Security Type should not be too long" do
     @user.security_type = "a" * 13
+    assert_not @user.valid?
+  end
+
+  test "SEO Type should be present" do
+    @user.seo_type = "    "
+    assert_not @user.valid?
+  end
+
+  test "SEO Type should not be too long" do
+    @user.seo_type = "a" * 13
     assert_not @user.valid?
   end
 

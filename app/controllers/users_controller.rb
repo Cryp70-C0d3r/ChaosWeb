@@ -49,7 +49,7 @@ class UsersController < ApplicationController
   private
 
     def user_params
-      params.require(:user).permit(:name, :email, :biz, :tel, :adr, :cty, :ste, :zip, :web_type, :hosting_type, :security_type, :date_started, :date_completed, :order_total, :ongoing_total, :due_date, :domain_name, :ip_adr, :password, :password_confirmation)
+      params.require(:user).permit(:name, :email, :biz, :tel, :adr, :cty, :ste, :zip, :web_type, :hosting_type, :security_type, :seo_type, :date_started, :date_completed, :order_total, :ongoing_total, :due_date, :domain_name, :ip_adr, :password, :password_confirmation)
     end
 
     # Confirms a logged-in user.

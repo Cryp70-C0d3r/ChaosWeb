@@ -12,6 +12,7 @@ hacker:
   web_type: Web App
   hosting_type: Corporate
   security_type: Corporate
+  seo_type: Corporate
   date_started: 01/01/2021
   date_completed: 01/15/2021
   order_total: $10,150.89
@@ -34,6 +35,7 @@ coder:
   web_type: Web App
   hosting_type: Corporate
   security_type: Corporate
+  seo_type: Corporate
   date_started: 01/01/2021
   date_completed: 01/15/2021
   order_total: $10,150.89

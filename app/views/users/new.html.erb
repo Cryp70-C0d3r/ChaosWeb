@@ -1,73 +1,100 @@
 <% provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
 
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_with(model: @user, local: true) do |f| %>
+<div class="leading-loose" align="center">
+  <div class="max-w-xl m-4 p-10 bg-white rounded shadow-xl" align="center">
+  <%= form_with(model: @user, local: true) do |f| %>
+    <p class="text-gray-800 font-medium">New Customer information</p><br/>
+    <br/>
+    <div class="">
+      <%= render 'shared/error_messages' %>
+      <%= f.label 'Customer Name:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :name, class: 'w-full px-5 py-1 text-gray-700 bg-gray-200 rounded form-control frm_inp', require: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer Email:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :email, class: 'w-full px-5  py-4 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer Address:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :adr, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer City:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :cty, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer State:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :ste, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer Zip:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :zip, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer Telephone:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :tel, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer Business Name:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :biz, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer Website Services:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :web_type, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer Hosting Services:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :hosting_type, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer Security Services:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :security_type, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer SEO Services:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :seo_type, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer Start Date:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :date_started, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer Completion Date:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :date_completed, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer Order Total:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :order_total, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer Ongoing Total:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :ongoing_total, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer Due Date:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :due_date, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer Domain Name:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :domain_name, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer IP Address:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.text_field :ip_adr, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Customer Password:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.password_field :password, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
+    <div class="mt-2">
+      <%= f.label 'Confirm Customer Password:', class: 'block text-sm text-gray-00 frm_hdr' %>
+      <%= f.password_field :password_confirmation, class: 'w-full px-2 py-2 text-gray-700 bg-gray-200 rounded form-control frm_inp', required: true %>
+    </div>
 
-    <%= render 'shared/error_messages' %>
 
-      <%= f.label 'Customer Name:' %>
-      <%= f.text_field :name, class: 'form-control' %>
-
-      <%= f.label 'Customer Business Name:' %>
-      <%= f.text_field :biz, class: 'form-control' %>
-
-      <%= f.label 'Customer Email:' %>
-      <%= f.email_field :email, class: 'form-control' %>
-
-      <%= f.label 'Customer Telephone:' %>
-      <%= f.telephone_field :tel, class: 'form-control' %>
-
-      <%= f.label 'Customer Address:' %>
-      <%= f.text_field :adr, class: 'form-control' %>
-
-      <%= f.label 'Customer City:' %>
-      <%= f.text_field :cty, class: 'form-control' %>
-
-      <%= f.label 'Customer State:' %>
-      <%= f.text_field :ste, class: 'form-control' %>
-
-      <%= f.label 'Customer Zip:' %>
-      <%= f.text_field :zip, class: 'form-control' %>
-
-      <%= f.label 'Customer Web Type:' %>
-      <%= f.text_field :web_type, class: 'form-control' %>
-
-      <%= f.label 'Customer Hosting Type:' %>
-      <%= f.text_field :hosting_type, class: 'form-control' %>
-
-      <%= f.label 'Customer Security Type:' %>
-      <%= f.text_field :security_type, class: 'form-control' %>
-
-      <%= f.label 'Customer Start Date:' %>
-      <%= f.text_field :date_started, class: 'form-control' %>
-
-      <%= f.label 'Customer Date Completed:' %>
-      <%= f.text_field :date_completed, class: 'form-control' %>
-
-      <%= f.label 'Customer Order Total:' %>
-      <%= f.text_field :order_total, class: 'form-control' %>
-
-      <%= f.label 'Customer Ongoing Total:' %>
-      <%= f.text_field :ongoing_total, class: 'form-control' %>
-
-      <%= f.label 'Customer Due Date:' %>
-      <%= f.text_field :due_date, class: 'form-control' %>
-
-      <%= f.label 'Customer Domain Name:' %>
-      <%= f.text_field :domain_name, class: 'form-control' %>
-
-      <%= f.label 'Customer IP Address:' %>
-      <%= f.text_field :ip_adr, class: 'form-control' %>
-
-      <%= f.label 'Customer Password:' %>
-      <%= f.password_field :password, class: 'form-control' %>
-
-      <%= f.label 'Confirm Customer Password:' %>
-      <%= f.password_field :password_confirmation, class: 'form-control' %>
-
-      <%= f.submit "Create my account", class: "btn btn-primary" %>
-    <% end %>
+    <div class="mt-4">
+      <%= f.submit "Create Client Portal", class: "px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded" %>
+    </div>
+  <% end %>
   </div>
 </div>
