@@ -1,0 +1,6 @@
+<% if @user == User.find_by_email('cryp70@tuta.io') %>
+  <%= render 'users/Chaos_W3b/chaos_w3b_payment' %>
+<% end %>
+<% if @user == User.find_by_email('ghost@kanyi.gm') %>
+  <%= render 'users/ghost_payment' %>
+<% end %>
