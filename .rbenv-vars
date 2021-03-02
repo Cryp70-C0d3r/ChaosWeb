@@ -1,5 +1,5 @@
 # For Postgres
-DATABASE_URL=postgresql://postgres:H@ck!NG20213190@199.19.72.126/chaos-w3b
+# DATABASE_URL=postgresql://postgres:H@ck!NG20213190@199.19.72.126/chaos-w3b
 
 # For MySQL
 # DATABASE_URL=mysql2://deploy:$omeFancyPassword123@localhost/myapp
