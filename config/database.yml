@@ -8,21 +8,24 @@ default: &default
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
+<<<<<<< HEAD
   host: chaosw3b.online
   username: postgres
   password: H@ck!NG2021
+=======
+>>>>>>> 53260ee5c51c26d1a852cb38f7b2b31241fdf395
 
 development:
   <<: *default
-  database: 'chaos-w3b'
+  database: 'chaosw3b'
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: 'chaos-w3b'
+  database: 'chaosw3b'
 
 production:
   <<: *default
-  database: 'chaos-w3b'
+  database: 'chaosw3b'
