@@ -8,8 +8,9 @@ default: &default
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-  host: <%= ENV['DB_HOST'] %>
-  password: <%= ENV['DB_PWD'] %>
+  host: chaosw3b.online
+  username: postgres
+  password: H@ck!NG2021
 
 development:
   <<: *default
