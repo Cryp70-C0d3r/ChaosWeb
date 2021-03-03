@@ -1,4 +1,4 @@
-server 'www.chaosw3b.online', user: 'deploy', roles: %w{app db web}
+server 'chaosw3b.online', user: 'deploy', roles: %w{app db web}
 
 # server-based syntax
 # ======================
