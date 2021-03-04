@@ -3,7 +3,7 @@ require "test_helper"
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
 
   def setup
-    @base_title = "ChaosWeb"
+    @base_title = "Website Development & Hosting Security Firm - ChaosW3b"
   end
 
   test "should get home" do
@@ -46,5 +46,5 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     get cancel_path
     assert_response :success
     assert_select "title", "Cancel Order | #{@base_title}"
-  end 
+  end
 end
