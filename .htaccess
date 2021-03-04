@@ -1,4 +1,0 @@
-def old_action
-headers[“Status”] = “301 Moved Permanently”
-redirect_to “http://www.chaosw3b.online/”
-end
