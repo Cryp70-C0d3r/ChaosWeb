@@ -3,7 +3,7 @@ require "test_helper"
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
 
   def setup
-    @base_title = "Website Development & Hosting Security Firm - ChaosW3b"
+    @base_title = "Web Development, Web Hosting, Server Security, Digital Marketing ChaosW3b"
   end
 
   test "should get home" do
