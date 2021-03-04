@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-set :application, "ChaosWeb"
+set :application, "chaosweb"
 set :repo_url, "git@github.com:Cryp70-C0d3r/ChaosWeb.git"
 
 # Deploy to the user's home directory
