@@ -23,4 +23,7 @@ Rails.application.routes.draw do
   # Set Project Resources #
   resources :contact, only: [:index, :new, :create]
   resources :users
+
+  # Set Project SiteMap #
+  get "/sitemap.xml" => "public#index", :format => "xml", :as => :sitemap
 end
