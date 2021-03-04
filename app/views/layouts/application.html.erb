@@ -2,9 +2,15 @@
 <html>
   <head>
     <title><%= full_title(yield(:title)) %></title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="High valued Web Design Company Custom, Creative, Results-Driven. Request a Quote. Branding. Responsive Development. Digital Marketing. Online Marketing. Digital Design. Free Consultation. Services: Branding, Content Production. Website Hosting. Server Security. Custom Website Development."
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta property="og:url"                content="https://www.chaosw3b.online" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Website Development & Hosting Security Firm - ChaosW3b" />
+    <meta property="og:description"        content="High valued Web Design Company. Custom, Creative, Results-Driven. Request a Quote. Branding. Responsive Development. Digital Marketing. Online Marketing. Digital Design." />
+    <meta property="og:image"              content="https://www.itl.cat/pngfile/big/30-305952_hacking-hd-wallpapers-and-backgrounds-hacker-deep-web.jpg" />
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -12,6 +18,8 @@
 	  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel+Decorative&family=DotGothic16&family=Oswald&family=Roboto+Mono&family=Stardos+Stencil&family=Syncopate&family=VT323&display=swap" rel="stylesheet">
+
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6K3PNWXVS"></script>
     <script>
@@ -21,6 +29,23 @@
 
       gtag('config', 'G-P6K3PNWXVS');
     </script>
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '437007624245262');
+        fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=437007624245262&ev=PageView&noscript=1" /></noscript>
+      <!-- End Facebook Pixel Code -->
   </head>
 
   <body>
