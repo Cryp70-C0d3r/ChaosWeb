@@ -12,7 +12,7 @@
             <nav>
                <ul class="md:flex items-center justify-between text-base text-blue-600 pt-4 md:pt-0">
                   <li><img src="https://media0.giphy.com/media/9igGG6KxpY0eY0Sr5u/giphy.gif" class="inline-block no-underline hover:text-black font-medium text-lg py-2 px-4 lg:-ml-2" style="height: 75px; width: 100px;"></li>
-                  <li><%= link_to "ChaosWeb", root_path, class: 'inline-block no-underline hover:text-black font-medium text-2xl py-2 px-4 lg:-ml-2', onclick: 'FB.AppEvents.logEvent("buttonClicked")' %></li>
+                  <li><%= link_to "ChaosWeb", root_path, class: 'inline-block no-underline hover:text-black font-medium text-2xl py-2 px-4 lg:-ml-2' %></li>
                </ul>
             </nav>
          </div>
@@ -20,15 +20,15 @@
          <div class="order-2 md:order-3 flex flex-wrap items-center justify-end mr-0 md:mr-4" id="nav-content">
             <div class="auth flex items-center w-full md:w-full">
               <ul class="md:flex items-center justify-between text-base text-blue-600 pt-4 md:pt-0">
-                <li><%= link_to 'Home', root_path, class: "inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk", onclick: 'FB.AppEvents.logEvent("buttonClicked")' %></li>
-                <li><%= link_to 'Contact', contact_path, class: "inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk", onclick: 'FB.AppEvents.logEvent("buttonClicked")' %></li>
-                <li><%= link_to 'About', about_path, class: "inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk", onclick: 'FB.AppEvents.logEvent("buttonClicked")' %></li>
-                <li><%= link_to 'Services', services_path, class: "inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk, onclick: 'FB.AppEvents.logEvent("buttonClicked")'" %></li>
-                <li><%= link_to 'Portfolio', portfolio_path, class: "inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk", onclick: 'FB.AppEvents.logEvent("buttonClicked")' %></li>
+                <li><%= link_to 'Home', root_path, class: "inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk" %></li>
+                <li><%= link_to 'Contact', contact_path, class: "inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk" %></li>
+                <li><%= link_to 'About', about_path, class: "inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk" %></li>
+                <li><%= link_to 'Services', services_path, class: "inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk" %></li>
+                <li><%= link_to 'Portfolio', portfolio_path, class: "inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk" %></li>
                 <% if logged_in? %>
-                  <li><%= link_to 'My Portal', current_user, class: 'inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk', onclick: 'FB.AppEvents.logEvent("buttonClicked")' %></li>
+                  <li><%= link_to 'My Portal', current_user, class: 'inline-block no-underline font-medium text-2xl py-2 px-4 lg:-ml-2 nav_lnk' %></li>
                 <% else %>
-                  <li><%= link_to 'Log In', login_path, class: 'inline-block no_underline font-medium text-2xl px-4 lg:-ml-2 nav_lnk', onclick: 'FB.AppEvents.logEvent("buttonClicked")' %></li>
+                  <li><%= link_to 'Log In', login_path, class: 'inline-block no_underline font-medium text-2xl px-4 lg:-ml-2 nav_lnk' %></li>
                 <% end %>
               </ul>
             </div>
