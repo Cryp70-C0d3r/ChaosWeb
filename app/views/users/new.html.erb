@@ -1,5 +1,6 @@
+<% if current_user && current_user.admin? %>
 <% provide(:title, 'Sign up') %>
-
+<!-- Run This in Server for Rails C (RAILS_ENV=production ./bin/rails console ) -->
 <div class="leading-loose" align="center">
   <div class="max-w-xl m-4 p-10 bg-white rounded shadow-xl" align="center">
   <%= form_with(model: @user, local: true) do |f| %>
@@ -98,3 +99,77 @@
   <% end %>
   </div>
 </div>
+<% else %>
+
+<% provide(:title, 'Hacker Proof') %>
+<section class="container mx-auto px-6 p-10">
+  <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+    Hack Proof!<br/>
+  </h2><br/>
+  <div class="flex items-center flex-wrap mb-20">
+    <div class="w-full md:w-1/2">
+      <h4 class="text-3xl text-gray-800 font-bold mb-3">Hacker Proof</h4>
+      <p class="text-gray-600 mb-8">
+        While most web-based applications utilize an <strong>Administration Portal</strong>, we also utilize one! However, you are either;<br/>
+        A) Not in the right spot!<br/>
+        B) Do not have the right credentials!<br/>
+        C) We have fooled you!<br/>
+        For those who wish to perform <strong>Ethical Hacking</strong> techniques in order to provide assistance with our security, please feel
+        free to reach out to one of the <strong>Cyber Security Specialists</strong>:<br/>
+        <%= link_to 'Gh0s7', 'mailto:gh0s7@kanyi.gm', style: 'cursor: crosshair; text-decoration: overline; font-size: 30px; text-shadow: 5px 5px 7px #00F; color: #00F;' %>&nbsp&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to 'Cryp70', 'mailto:cryp70@tuta.io', style: 'cursor: crosshair; text-decoration: overline; font-size: 30px; text-shadow: 5px 5px 7px #0F0; color: #0F0;' %>
+    </p>
+    </div>
+    <div class="w-full md:w-1/2">
+      <img src="https://i.pinimg.com/originals/6b/31/5c/6b315c9e40fcd643686403cb6c47d38d.jpg" alt="Monitoring" />
+    </div>
+  </div>
+
+  <div class="flex items-center flex-wrap mb-20">
+    <div class="w-full md:w-1/2">
+      <img src="https://cdn.theatlantic.com/thumbor/9u-u7nYP2JNVKNvfVlLzdCmq6_U=/0x50:960x590/720x405/media/img/mt/2016/10/banner-3/original.gif" alt="Reporting" />
+    </div>
+    <div class="w-full md:w-1/2 pl-10">
+      <h4 class="text-3xl text-gray-800 font-bold mb-3">Active Monitoring</h4>
+      <p class="text-gray-600 mb-8">
+        We have spent several hundreds of thousands of hours, researching &amp; developing this application!
+        It should come as no surprise that they have integrated a variety of <strong>Hacker Prevention</strong> structure in order to keep unwanted people out!<br/>
+        1) Server-Based Security:<br/>
+        1.A) Firewall Protection<br/>
+        1.B) SSL Certification<br/>
+        1.C) Active Monitoring (SERVER)<br/>
+        1.D) CloudFlare Protection<br/>
+        <br/>
+        2) Application-Based Security:<br/>
+        2.A) 9098-Bit Encrypted SSH Keys<br/>
+        2.B) Active Monitoring (APPLICATION)<br/>
+        3.C) IP Address Tracking<br/>
+        <br/>
+        We do not actually want <strong>UnEthical Hackers</strong> gaining access and destroying our Reputation alongside with the actuall Application.
+      </p>
+    </div>
+  </div>
+
+  <div class="flex items-center flex-wrap mb-20">
+    <div class="w-full md:w-1/2">
+      <h4 class="text-3xl text-gray-800 font-bold mb-3">Hacker Detection</h4>
+      <p class="text-gray-600 mb-8">
+        As <strong>Cyber Threats</strong> come an all time high, and not slowing down, so is our passion, drive, and determination to ensure our application is secured! We
+        can achieve this goal by actively monitoring all network activity and storing selected information. <br/>
+        Example:<br/>
+        Our server indicates an unusual attempt for something that;<br/>
+        A) Does Not Exist!<br/>
+        B) They Do Not Have Access To!<br/>
+        Our system will automatically grab the intruders IP Address and store it in a seperate data file. From there, both Gh0s7 &amp; Cryp70 receives a notification on ALL of their
+        devices about the issue at hand.<br/>
+        Want more Information Here are <br/><strong>YOUR DETAILS:</strong><br/>
+        <strong><i><u>IP Address:</u></i></strong><%= request.remote_addr %><br/>
+        <strong><i><u>Browser Intel:</u></i></strong><%= request.env['HTTP_USER_AGENT'] %><br/>
+      </p>
+    </div>
+    <div class="w-full md:w-1/2">
+      <img src="https://steamuserimages-a.akamaihd.net/ugc/954101135156565426/21D9841F8E03ED30D91A7720388E1E8D3A464FC0/" alt="Syncing" />
+    </div>
+  </div>
+</section>
+
+<% end %>
