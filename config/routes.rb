@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'portfolio',      to: 'static_pages#portfolio'
   get 'success',        to: 'static_pages#order_success'
   get 'cancel',         to: 'static_pages#order_cancel'
+  post 'submit-contact', to: 'static_pages#submit_contact', as: 'contacts'
 
   # Set Users Directories #
   get 'signup',         to: 'users#new'

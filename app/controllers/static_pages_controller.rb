@@ -8,7 +8,20 @@ class StaticPagesController < ApplicationController
   def index
   end
 
-  def create
+  def contact
+    @contact = ContactForm.new
+  end
+
+  def submit_contact
+    @contact = ContactForm.new(contact_params)
+      @contact.request = request
+      if @contact.deliver
+        flash.now[:notice] = 'Thank you for your message!'
+        render :contact
+      else
+        flash.now[:error] = 'Cannot send message.'
+        render :contact
+      end
   end
 
   def services
@@ -22,4 +35,11 @@ class StaticPagesController < ApplicationController
 
   def order_cancel
   end
+
+
+  def contact_params
+    params.require(:contact_form).permit(:name, :email, :tel, :nickname, :message, :captcha)
+  end
+
+
 end
