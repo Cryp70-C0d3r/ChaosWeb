@@ -3,3 +3,8 @@
     <%= render 'users/Chaos_W3b/chaos_w3b_notes' %>
   </p>
 <% end %>
+
+
+<% if @user == User.find_by_email('js@truly-teal.com') %>
+  <%= render 'users/TrulyTeal/truly_teal_notes' %>
+<% end %>
