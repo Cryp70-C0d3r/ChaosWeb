@@ -4,3 +4,6 @@
 <% if @user == User.find_by_email('ghost@kanyi.gm') %>
   <%= render 'users/ghost_payment' %>
 <% end %>
+<% if @user == User.find_by_email('js@truly-teal.com') %>
+  <%= render 'users/truly_teal_payment' %>
+<% end %>
