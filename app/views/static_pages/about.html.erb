@@ -14,7 +14,7 @@
   <div class="card border w-96 hover:shadow-none relative flex flex-col mx-auto shadow-lg m-5">
     <%= image_tag('stairs_to_heaven.jpg', class: 'max-h-20 w-full opacity-80 absolute top-0', style: 'z-index:-1', alt: 'SEO and Marketing Director') %>
     <div class="profile w-full flex m-3 ml-4 text-white">
-      <%= image_tag('khristane_love', class: 'w-28 h-28 p-1 bg-white rounded-full', alt: 'SEO and Marketing Director') %>
+      <%= image_tag('khristane.jpeg', class: 'w-28 h-28 p-1 bg-white rounded-full', alt: 'SEO and Marketing Director') %>
       <div class="title mt-11 ml-3 font-bold flex flex-col">
         <div class="name break-words">Khristane R. Love</div>
         <!--  add [dark] class for bright background -->
@@ -30,7 +30,7 @@
   <div class="card border w-96 hover:shadow-none relative flex flex-col mx-auto shadow-lg m-5">
     <%= image_tag('sys_fail.png', class: 'max-h-20 w-full opacity-80 absolute top-0', style: 'z-index:-1', alt: 'Web Developer Server Administrator Server Security Expert') %>
     <div class="profile w-full flex m-3 ml-4 text-white">
-      <%= image_tag('muhammed_kanyi', class: 'w-28 h-28 p-1 bg-white rounded-full', alt: 'Web Developer Server Administrator Server Security Expert') %>
+      <%= image_tag('muhammed_kanyi.jpg', class: 'w-28 h-28 p-1 bg-white rounded-full', alt: 'Web Developer Server Administrator Server Security Expert') %>
       <div class="title mt-11 ml-3 font-bold flex flex-col">
         <div class="name break-words">Muhammed Kanyi</div>
         <!--  add [dark] class for bright background -->
@@ -44,7 +44,7 @@
   </div>
   <!-- card end -->
   <div class="card border w-96 hover:shadow-none relative flex flex-col mx-auto shadow-lg m-5">
-    <%= image_tag('cryp70_bnr.jpg', class: 'max-h-20 w-full opacity-80 absolute top-0', style: 'z-index:-1', alt: 'Web Developer Server Administrator Server Security Expert') %>
+    <%= image_tag('aubrey_love.jpg', class: 'max-h-20 w-full opacity-80 absolute top-0', style: 'z-index:-1', alt: 'Web Developer Server Administrator Server Security Expert') %>
     <div class="profile w-full flex m-3 ml-4 text-white">
       <%= image_tag('aubrey_love', class: 'w-28 h-28 p-1 bg-white rounded-full', alt: 'Web Developer Server Administrator Server Security Expert') %>
       <div class="title mt-11 ml-3 font-bold flex flex-col">
@@ -59,7 +59,22 @@
     </div>
   </div>
   <!-- card end -->
-
+  <div class="card border w-96 hover:shadow-none relative flex flex-col mx-auto shadow-lg m-5">
+    <%= image_tag('cryp70_bnr.jpg', class: 'max-h-20 w-full opacity-80 absolute top-0', style: 'z-index:-1', alt: 'Web Developer Server Administrator Server Security Expert') %>
+    <div class="profile w-full flex m-3 ml-4 text-white">
+      <%= image_tag('taheer_musa.jpeg', class: 'w-28 h-28 p-1 bg-white rounded-full', alt: 'Web Developer Server Administrator Server Security Expert') %>
+      <div class="title mt-11 ml-3 font-bold flex flex-col">
+        <div class="name break-words">Taheer Musa</div>
+        <!--  add [dark] class for bright background -->
+        <div class="add font-semibold text-sm italic dark">Coder</div>
+      </div>
+    </div>
+    <div class="buttons flex absolute bottom-0 font-bold right-0 text-xs text-gray-500 space-x-0 my-3.5 mr-3">
+      <!-- <div class="add border rounded-l-2xl rounded-r-sm border-gray-300 p-1 px-4 cursor-pointer hover:bg-gray-700 hover:text-white">Contact</div> -->
+      <div class="add border rounded-r-2xl rounded-l-sm border-gray-300 p-1 px-4 cursor-pointer hover:bg-gray-700 hover:text-white" onclick="VirusClick()">Bio</div>
+    </div>
+  </div>
+  <!-- card end -->
 
 </div>
 
@@ -212,7 +227,33 @@
       </div>
       <!-- End Cryp70 About Section -->
 
+      <!-- Start V1ru5 About Section -->
+      <div class="w-3/4 mx-auto" id="VirusDIV" style="display: none">
+        <div class="w-full shadow-2xl subpixel-antialiased rounded h-64 bg-black border-green mx-auto">
+          <div class="flex items-center h-6 rounded-t bg-gray-100 border-b border-gray-500 text-center text-black" id="headerTerminal">
+            <div class="flex ml-2 items-center text-center border-red-900 bg-red-500 shadow-inner rounded-full w-3 h-3" id="closebtn">
+            </div>
+            <div class="ml-2 border-yellow-900 bg-yellow-500 shadow-inner rounded-full w-3 h-3" id="minbtn">
+            </div>
+            <div class="ml-2 border-green-900 bg-green-500 shadow-inner rounded-full w-3 h-3" id="maxbtn">
+            </div>
+            <div class="mx-auto pr-16" id="terminaltitle">
+              <p class="text-center text-sm">Taheer M. Terminal</p>
+            </div>
 
+          </div>
+          <div class="pl-1 pt-1 h-auto  text-green-200 font-mono text-xs bg-black" id="console" style="margin-bottom: 20px;">
+            <p class="pb-1">Last login: <%= Time.now.strftime("%d/%m/%Y %H:%M") %></p>
+            Taheer M. Bio:<br/>
+            This dedicated indivdual has meet all of the necessary requirements we need in order to utilize his skills. Taheer has
+            dedicated a lot of time and efforts into learning and growing, and while still young, we have given him a chance and he
+            proved himself worthy! This individual is extremely smart and talented for our WordPress and PhP developer role. We
+            truly enjoy working with this individual and look forward to his growth in the future!<br/>
+            "Suck it up and do as ordered" ~ Sudo
+          </div>
+        </div>
+      </div>
+        <!-- End V1ru5 About Section -->
 
 
   </div>
@@ -654,7 +695,21 @@
       }
     }
 
-
+    function VirusClick()
+    {
+      var v = document.getElementById("VirusDIV");
+      if (v.style.display === "none")
+      {
+        v.style.display = "block";
+        document.getElementById("AngelDIV").style.display = "none";
+        document.getElementById("GhostDIV").style.display = "none";
+        document.getElementById("Cryp70DIV").style.display = "none";
+      }
+      else
+      {
+        v.style.display = "none";
+      }
+    }
 
     </script>
     <style>
